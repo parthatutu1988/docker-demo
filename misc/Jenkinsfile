@@ -1,8 +1,5 @@
 node {
    def commit_id
-   
-   wrap([$class: 'BuildUser']) {
-     echo "BUILD_USER that started this Pipeline: ${BUILD_USER}"
    }
    stage('Preparation') {
      checkout scm
